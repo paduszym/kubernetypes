@@ -1,0 +1,34 @@
+{
+  "name": "kubernetypes-sources",
+  "version": "0.0.0-development",
+  "private": true,
+  "engines": {
+    "node": "24"
+  },
+  "scripts": {
+    "build:packages/@kubernetypes/traefik": "npm run run:kubernetypes-gen -- ./packages/@kubernetypes/traefik",
+    "build:packages/kubernetypes": "npm run run:kubernetypes-gen -- ./packages/kubernetypes",
+    "build:packages/kubernetypes-gen": "tsc -p ./packages/kubernetypes-gen",
+    "eslint": "eslint .",
+    "prepare": "husky",
+    "run:kubernetypes-gen": "node --import ./.ts-node/register.mjs packages/kubernetypes-gen/cmd/kubernetypes-gen/main.ts"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@types/node": "24.13.3",
+    "eslint": "10.10.0",
+    "eslint-plugin-import-x": "4.17.1",
+    "husky": "9.1.7",
+    "lint-staged": "17.5.1",
+    "prettier": "3.9.7",
+    "ts-node-maintained": "10.9.6",
+    "tsconfig-paths": "4.2.0",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.70.0",
+    "zod": "4.6.5"
+  },
+  "lint-staged": {
+    "*": "prettier -w -u",
+    "*.{js,mjs,ts,mts}": "eslint --fix"
+  }
+}

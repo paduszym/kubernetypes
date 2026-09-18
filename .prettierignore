@@ -1,0 +1,5 @@
+/.idea
+/.husky/_
+/package-lock.json
+node_modules/
+dist/

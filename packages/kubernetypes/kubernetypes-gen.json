@@ -1,0 +1,43 @@
+{
+  "loaderGoMod": {
+    "require": {
+      "k8s.io/api": "v0.35.0",
+      "k8s.io/apiextensions-apiserver": "v0.35.0",
+      "k8s.io/apimachinery": "v0.35.0",
+      "k8s.io/kube-aggregator": "v0.35.0"
+    }
+  },
+  "typeOverrides": {
+    "k8s.io/apimachinery/pkg/api/resource.Quantity": {
+      "kind": "union",
+      "elements": [
+        {
+          "kind": "string"
+        },
+        {
+          "kind": "number"
+        }
+      ]
+    },
+    "k8s.io/apimachinery/pkg/apis/meta/v1.Duration": {
+      "kind": "string"
+    },
+    "k8s.io/apimachinery/pkg/apis/meta/v1.Time": {
+      "kind": "string"
+    },
+    "k8s.io/apimachinery/pkg/apis/meta/v1.MicroTime": {
+      "kind": "string"
+    },
+    "k8s.io/apimachinery/pkg/util/intstr.IntOrString": {
+      "kind": "union",
+      "elements": [
+        {
+          "kind": "string"
+        },
+        {
+          "kind": "number"
+        }
+      ]
+    }
+  }
+}

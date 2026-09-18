@@ -1,0 +1,12 @@
+/*
+!/.editorconfig
+!/.gitignore
+!/.name
+
+!/*.iml
+!/modules.xml
+!/prettier.xml
+!/vcs.xml
+
+!/inspectionProfiles/
+!/jsLinters/

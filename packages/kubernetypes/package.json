@@ -1,0 +1,255 @@
+{
+  "name": "kubernetypes",
+  "version": "1.35.0",
+  "type": "module",
+  "description": "TypeScript types for core Kubernetes APIs",
+  "author": "Mateusz Paduszyński <paduszym@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "kubernetypes",
+    "kubernetes",
+    "typescript",
+    "types"
+  ],
+  "homepage": "https://github.com/paduszym/kubernetypes/tree/main/packages/kubernetypes",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paduszym/kubernetypes.git",
+    "directory": "packages/kubernetypes"
+  },
+  "bugs": {
+    "url": "https://github.com/paduszym/kubernetypes/issues"
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    "./api/admission/v1": {
+      "types": "./dist/api/admission/v1.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/admission/v1"
+    },
+    "./api/admission/v1beta1": {
+      "types": "./dist/api/admission/v1beta1.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/admission/v1beta1"
+    },
+    "./api/apiextensions/v1": {
+      "types": "./dist/api/apiextensions/v1.d.ts",
+      "kubernetypes": "gopkg:k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1"
+    },
+    "./api/apiregistration/v1": {
+      "types": "./dist/api/apiregistration/v1.d.ts",
+      "kubernetypes": "gopkg:k8s.io/kube-aggregator/pkg/apis/apiregistration/v1"
+    },
+    "./api/apps/v1": {
+      "types": "./dist/api/apps/v1.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/apps/v1"
+    },
+    "./api/authentication/v1": {
+      "types": "./dist/api/authentication/v1.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/authentication/v1"
+    },
+    "./api/authentication/v1alpha1": {
+      "types": "./dist/api/authentication/v1alpha1.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/authentication/v1alpha1"
+    },
+    "./api/authentication/v1beta1": {
+      "types": "./dist/api/authentication/v1beta1.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/authentication/v1beta1"
+    },
+    "./api/authorization/v1": {
+      "types": "./dist/api/authorization/v1.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/authorization/v1"
+    },
+    "./api/authorization/v1beta1": {
+      "types": "./dist/api/authorization/v1beta1.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/authorization/v1beta1"
+    },
+    "./api/autoscaling/v1": {
+      "types": "./dist/api/autoscaling/v1.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/autoscaling/v1"
+    },
+    "./api/autoscaling/v2": {
+      "types": "./dist/api/autoscaling/v2.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/autoscaling/v2"
+    },
+    "./api/batch/v1": {
+      "types": "./dist/api/batch/v1.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/batch/v1"
+    },
+    "./api/batch/v1beta1": {
+      "types": "./dist/api/batch/v1beta1.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/batch/v1beta1"
+    },
+    "./api/certificates/v1": {
+      "types": "./dist/api/certificates/v1.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/certificates/v1"
+    },
+    "./api/certificates/v1alpha1": {
+      "types": "./dist/api/certificates/v1alpha1.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/certificates/v1alpha1"
+    },
+    "./api/certificates/v1beta1": {
+      "types": "./dist/api/certificates/v1beta1.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/certificates/v1beta1"
+    },
+    "./api/coordination/v1": {
+      "types": "./dist/api/coordination/v1.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/coordination/v1"
+    },
+    "./api/coordination/v1alpha2": {
+      "types": "./dist/api/coordination/v1alpha2.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/coordination/v1alpha2"
+    },
+    "./api/coordination/v1beta1": {
+      "types": "./dist/api/coordination/v1beta1.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/coordination/v1beta1"
+    },
+    "./api/core/v1": {
+      "types": "./dist/api/core/v1.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/core/v1"
+    },
+    "./api/discovery/v1": {
+      "types": "./dist/api/discovery/v1.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/discovery/v1"
+    },
+    "./api/discovery/v1beta1": {
+      "types": "./dist/api/discovery/v1beta1.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/discovery/v1beta1"
+    },
+    "./api/events/v1": {
+      "types": "./dist/api/events/v1.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/events/v1"
+    },
+    "./api/events/v1beta1": {
+      "types": "./dist/api/events/v1beta1.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/events/v1beta1"
+    },
+    "./api/extensions/v1beta1": {
+      "types": "./dist/api/extensions/v1beta1.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/extensions/v1beta1"
+    },
+    "./api/flowcontrol/v1": {
+      "types": "./dist/api/flowcontrol/v1.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/flowcontrol/v1"
+    },
+    "./api/flowcontrol/v1beta1": {
+      "types": "./dist/api/flowcontrol/v1beta1.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/flowcontrol/v1beta1"
+    },
+    "./api/flowcontrol/v1beta2": {
+      "types": "./dist/api/flowcontrol/v1beta2.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/flowcontrol/v1beta2"
+    },
+    "./api/flowcontrol/v1beta3": {
+      "types": "./dist/api/flowcontrol/v1beta3.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/flowcontrol/v1beta3"
+    },
+    "./api/imagepolicy/v1alpha1": {
+      "types": "./dist/api/imagepolicy/v1alpha1.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/imagepolicy/v1alpha1"
+    },
+    "./api/networking/v1": {
+      "types": "./dist/api/networking/v1.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/networking/v1"
+    },
+    "./api/networking/v1beta1": {
+      "types": "./dist/api/networking/v1beta1.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/networking/v1beta1"
+    },
+    "./api/node/v1": {
+      "types": "./dist/api/node/v1.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/node/v1"
+    },
+    "./api/node/v1alpha1": {
+      "types": "./dist/api/node/v1alpha1.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/node/v1alpha1"
+    },
+    "./api/node/v1beta1": {
+      "types": "./dist/api/node/v1beta1.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/node/v1beta1"
+    },
+    "./api/policy/v1": {
+      "types": "./dist/api/policy/v1.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/policy/v1"
+    },
+    "./api/policy/v1beta1": {
+      "types": "./dist/api/policy/v1beta1.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/policy/v1beta1"
+    },
+    "./api/resource/v1": {
+      "types": "./dist/api/resource/v1.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/resource/v1"
+    },
+    "./api/resource/v1alpha3": {
+      "types": "./dist/api/resource/v1alpha3.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/resource/v1alpha3"
+    },
+    "./api/resource/v1beta1": {
+      "types": "./dist/api/resource/v1beta1.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/resource/v1beta1"
+    },
+    "./api/resource/v1beta2": {
+      "types": "./dist/api/resource/v1beta2.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/resource/v1beta2"
+    },
+    "./api/scheduling/v1": {
+      "types": "./dist/api/scheduling/v1.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/scheduling/v1"
+    },
+    "./api/scheduling/v1alpha1": {
+      "types": "./dist/api/scheduling/v1alpha1.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/scheduling/v1alpha1"
+    },
+    "./api/scheduling/v1beta1": {
+      "types": "./dist/api/scheduling/v1beta1.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/scheduling/v1beta1"
+    },
+    "./api/storage/v1": {
+      "types": "./dist/api/storage/v1.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/storage/v1"
+    },
+    "./api/storage/v1alpha1": {
+      "types": "./dist/api/storage/v1alpha1.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/storage/v1alpha1"
+    },
+    "./api/storage/v1beta1": {
+      "types": "./dist/api/storage/v1beta1.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/storage/v1beta1"
+    },
+    "./api/storagemigration/v1beta1": {
+      "types": "./dist/api/storagemigration/v1beta1.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/storagemigration/v1beta1"
+    },
+    "./apimachinery/api/resource": {
+      "types": "./dist/apimachinery/api/resource.d.ts",
+      "kubernetypes": "gopkg:k8s.io/apimachinery/pkg/api/resource"
+    },
+    "./apimachinery/apis/meta/v1": {
+      "types": "./dist/apimachinery/apis/meta/v1.d.ts",
+      "kubernetypes": "gopkg:k8s.io/apimachinery/pkg/apis/meta/v1"
+    },
+    "./apimachinery/runtime": {
+      "types": "./dist/apimachinery/runtime.d.ts",
+      "kubernetypes": "gopkg:k8s.io/apimachinery/pkg/runtime"
+    },
+    "./apimachinery/types": {
+      "types": "./dist/apimachinery/types.d.ts",
+      "kubernetypes": "gopkg:k8s.io/apimachinery/pkg/types"
+    },
+    "./apimachinery/util/intstr": {
+      "types": "./dist/apimachinery/util/intstr.d.ts",
+      "kubernetypes": "gopkg:k8s.io/apimachinery/pkg/util/intstr"
+    },
+    "./apimachinery/version": {
+      "types": "./dist/apimachinery/version.d.ts",
+      "kubernetypes": "gopkg:k8s.io/apimachinery/pkg/version"
+    },
+    "./apimachinery/watch": {
+      "types": "./dist/apimachinery/watch.d.ts",
+      "kubernetypes": "gopkg:k8s.io/apimachinery/pkg/watch"
+    },
+    "./package.json": {
+      "default": "./package.json"
+    }
+  }
+}

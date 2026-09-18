@@ -1,0 +1,55 @@
+{
+  "name": "@kubernetypes/traefik",
+  "version": "3.7.0",
+  "type": "module",
+  "description": "TypeScript types for Traefik Kubernetes CRDs",
+  "author": "Mateusz Paduszyński <paduszym@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "kubernetypes",
+    "kubernetes",
+    "typescript",
+    "types",
+    "traefik"
+  ],
+  "homepage": "https://github.com/paduszym/kubernetypes/tree/main/packages/@kubernetypes/traefik",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paduszym/kubernetypes.git",
+    "directory": "packages/@kubernetypes/traefik"
+  },
+  "bugs": {
+    "url": "https://github.com/paduszym/kubernetypes/issues"
+  },
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "kubernetypes": ">= 1.35.0"
+  },
+  "exports": {
+    "./api/traefikio/v1alpha1": {
+      "types": "./dist/api/traefikio/v1alpha1.d.ts",
+      "kubernetypes": "gopkg:github.com/traefik/traefik/v3/pkg/provider/kubernetes/crd/traefikio/v1alpha1"
+    },
+    "./config/dynamic": {
+      "types": "./dist/config/dynamic.d.ts",
+      "kubernetypes": "gopkg:github.com/traefik/traefik/v3/pkg/config/dynamic"
+    },
+    "./observability/types": {
+      "types": "./dist/observability/types.d.ts",
+      "kubernetypes": "gopkg:github.com/traefik/traefik/v3/pkg/observability/types"
+    },
+    "./package.json": {
+      "default": "./package.json"
+    },
+    "./tls": {
+      "types": "./dist/tls.d.ts",
+      "kubernetypes": "gopkg:github.com/traefik/traefik/v3/pkg/tls"
+    },
+    "./types": {
+      "types": "./dist/types.d.ts",
+      "kubernetypes": "gopkg:github.com/traefik/traefik/v3/pkg/types"
+    }
+  }
+}

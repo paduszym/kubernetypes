@@ -1,0 +1,42 @@
+{
+  "name": "kubernetypes-gen",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Kubernetes TypeScript types generator",
+  "author": "Mateusz Paduszyński <paduszym@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "kubernetypes",
+    "kubernetes",
+    "typescript",
+    "types",
+    "generator"
+  ],
+  "homepage": "https://github.com/paduszym/kubernetypes/tree/main/packages/kubernetypes-gen",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paduszym/kubernetypes.git",
+    "directory": "packages/kubernetypes-gen"
+  },
+  "bugs": {
+    "url": "https://github.com/paduszym/kubernetypes/issues"
+  },
+  "files": [
+    "go.mod",
+    "go.sum",
+    "**/*.js",
+    "**/*.go"
+  ],
+  "engines": {
+    "node": ">= 24.11"
+  },
+  "bin": {
+    "kubernetypes-gen": "./cmd/kubernetypes-gen/main.js"
+  },
+  "dependencies": {
+    "zod": "^4.6.5"
+  },
+  "peerDependencies": {
+    "typescript": ">= 5.9.3"
+  }
+}

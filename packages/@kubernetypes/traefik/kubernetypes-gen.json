@@ -1,0 +1,32 @@
+{
+  "loaderGoMod": {
+    "require": {
+      "github.com/traefik/traefik/v3": "v3.7.0"
+    },
+    "replace": {
+      "github.com/traefik/traefik/dynamic/ext": "./dynamic-ext"
+    }
+  },
+  "typeReplacements": {
+    "net/http.Header": {
+      "kind": "object-literal",
+      "indexSignature": {
+        "key": {
+          "kind": "string"
+        },
+        "val": {
+          "kind": "array",
+          "element": {
+            "kind": "string"
+          }
+        }
+      }
+    },
+    "google.golang.org/grpc/codes.Code": {
+      "kind": "number"
+    },
+    "github.com/traefik/paerser/types.Duration": {
+      "kind": "number"
+    }
+  }
+}
