@@ -1,6 +1,6 @@
 {
   "name": "kubernetypes",
-  "version": "1.35.0",
+  "version": "1.37.0",
   "type": "module",
   "description": "TypeScript types for core Kubernetes APIs",
   "author": "Mateusz Paduszyński <paduszym@gmail.com>",
@@ -196,9 +196,9 @@
       "types": "./dist/api/scheduling/v1.d.ts",
       "kubernetypes": "gopkg:k8s.io/api/scheduling/v1"
     },
-    "./api/scheduling/v1alpha1": {
-      "types": "./dist/api/scheduling/v1alpha1.d.ts",
-      "kubernetypes": "gopkg:k8s.io/api/scheduling/v1alpha1"
+    "./api/scheduling/v1alpha3": {
+      "types": "./dist/api/scheduling/v1alpha3.d.ts",
+      "kubernetypes": "gopkg:k8s.io/api/scheduling/v1alpha3"
     },
     "./api/scheduling/v1beta1": {
       "types": "./dist/api/scheduling/v1beta1.d.ts",
