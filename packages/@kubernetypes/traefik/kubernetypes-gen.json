@@ -1,7 +1,7 @@
 {
   "loaderGoMod": {
     "require": {
-      "github.com/traefik/traefik/v3": "v3.7.0"
+      "github.com/traefik/traefik/v3": "v3.7.13"
     },
     "replace": {
       "github.com/traefik/traefik/dynamic/ext": "./dynamic-ext"

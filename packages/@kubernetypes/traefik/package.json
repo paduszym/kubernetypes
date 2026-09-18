@@ -1,6 +1,6 @@
 {
   "name": "@kubernetypes/traefik",
-  "version": "3.7.0",
+  "version": "3.7.13",
   "type": "module",
   "description": "TypeScript types for Traefik Kubernetes CRDs",
   "author": "Mateusz Paduszyński <paduszym@gmail.com>",
