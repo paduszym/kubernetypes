@@ -6,7 +6,7 @@
  */
 import { resolve } from 'node:path';
 
-import { generate } from '../../internal/kubernetypes/generate';
+import { generate } from '../../internal/kubernetypes/generate.js';
 
 async function main(args: string[]) {
   const [packageDir] = args;

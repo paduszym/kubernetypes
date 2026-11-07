@@ -4,7 +4,7 @@
  */
 import { z } from 'zod';
 
-import { Type } from './type';
+import { Type } from './type.js';
 
 export type Declaration = z.infer<typeof Declaration>;
 export const Declaration = z.object({

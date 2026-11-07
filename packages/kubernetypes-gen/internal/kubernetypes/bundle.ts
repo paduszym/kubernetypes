@@ -5,8 +5,8 @@
 import ts from 'typescript';
 import { z } from 'zod';
 
-import { Declaration } from './declaration';
-import type { IndexSignature, Type } from './type';
+import { Declaration } from './declaration.js';
+import type { IndexSignature, Type } from './type.js';
 
 export type Bundle = z.infer<typeof Bundle>;
 export const Bundle = z.object({

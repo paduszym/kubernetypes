@@ -6,9 +6,9 @@ import { join } from 'node:path';
 
 import z from 'zod';
 
-import { Bundle } from './bundle';
-import { go } from './go';
-import type { Type } from './type';
+import { Bundle } from './bundle.js';
+import { go } from './go.js';
+import type { Type } from './type.js';
 
 export interface TransformInput {
   entry: { [dtsFile: string]: string };

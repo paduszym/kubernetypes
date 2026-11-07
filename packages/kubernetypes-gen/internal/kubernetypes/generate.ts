@@ -6,11 +6,11 @@ import { mkdir, mkdtempDisposable, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { dirname, join, normalize, resolve } from 'node:path';
 
-import { bundleRender } from './bundle';
-import { configRead } from './config';
-import { go } from './go';
-import { packageJsonTree } from './package';
-import { transform, type TransformInput } from './transform';
+import { bundleRender } from './bundle.js';
+import { configRead } from './config.js';
+import { go } from './go.js';
+import { packageJsonTree } from './package.js';
+import { transform, type TransformInput } from './transform.js';
 
 export async function generate(packageDir: string) {
   const { loaderGoMod, typeOverrides = {}, typeReplacements = {} } = await configRead(packageDir);

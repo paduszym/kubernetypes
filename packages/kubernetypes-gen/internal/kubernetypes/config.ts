@@ -7,7 +7,7 @@ import { join } from 'node:path';
 
 import { z } from 'zod';
 
-import { Type } from './type';
+import { Type } from './type.js';
 
 export type Config = z.infer<typeof Config>;
 export const Config = z.object({
