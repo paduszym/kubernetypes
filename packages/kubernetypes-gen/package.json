@@ -1,6 +1,6 @@
 {
   "name": "kubernetypes-gen",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "type": "module",
   "description": "Kubernetes TypeScript types generator",
   "author": "Mateusz Paduszyński <paduszym@gmail.com>",
@@ -38,6 +38,6 @@
     "zod": "^4.6.5"
   },
   "peerDependencies": {
-    "typescript": ">= 5.9.3"
+    "typescript": "^5.9.3 || ^6.x"
   }
 }
